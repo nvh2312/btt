@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <title>Dashboard Sidebar Menu</title>
+  </head>
+  <body>
+    <div class="header">
+      <h2>Smart Home</h2>
+    </div>
+    <nav class="sidebar close">
+      <header>
+        <div class="image-text">
+          <span class="image">
+            <img src="./images/logo.png" alt="" />
+          </span>
+
+          <div class="text logo-text">
+            <span class="name">Design For</span>
+            <span class="profession">Exercise 2</span>
+          </div>
+        </div>
+
+        <i class="bx bx-chevron-right toggle"></i>
+      </header>
+      <div class="menu-bar">
+        <div class="menu">
+          <ul class="menu-links">
+            <li class="nav-link">
+              <div class="room" id="livingroom">
+                <img src="./images/phongkhach.jpg" alt="" />
+                <div class="room-name text">Living room</div>
+              </div>
+            </li>
+            <li class="nav-link">
+              <div class="room" id="kitchen">
+                <img src="./images/phongbep.jpg" alt="" />
+                <div class="room-name text">Kitchen</div>
+              </div>
+            </li>
+            <li class="nav-link">
+              <div class="room" id="bedroom">
+                <img src="./images/phongngu.jpg" alt="" />
+                <div class="room-name text">Bedroom</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="home">
+      <div class="room-name">
+        <div class="text text-name" id="room-show">Living room</div>
+      </div>
+      <div class="sensor-data">
+        <div class="text">Sensors Data</div>
+      </div>
+      <div class="list-sensor">
+        <button class="btn btn-primary">
+          <div class="content-btn">
+            <img class="sensor-img" src="./images/nhietdo.jpg" alt="" />
+            <div class="btn-text">
+              -- Temperature: <span class="text-danger">None</span>
+            </div>
+          </div>
+        </button>
+        <button class="btn btn-primary">
+          <div class="content-btn">
+            <img class="sensor-img" src="./images/doam.jpg" alt="" />
+            <div class="btn-text">
+              -- Temperature: <span class="text-primary">None</span>
+            </div>
+          </div>
+        </button>
+        <button class="btn btn-primary">
+          <div class="content-btn">
+            <img class="sensor-img" src="./images/khigas.jpg" alt="" />
+            <div class="btn-text">-- Temperature: <span>None</span></div>
+          </div>
+        </button>
+        <button class="btn btn-primary">
+          <div class="content-btn">
+            <img class="sensor-img" src="./images/anhsang.jpg" alt="" />
+            <div class="btn-text">
+              -- Temperature: <span class="text-warning">None</span>
+            </div>
+          </div>
+        </button>
+      </div>
+      <div class="smart-device">
+        <div class="text">Smart Devices</div>
+      </div>
+      <div class="list-device">
+        <div class="device-content">
+          <div class="device-img">
+            <img id="light1" src="./images/pic_bulboff.gif" />
+          </div>
+          <div class="controll">
+            <button
+              onclick="document.getElementById('light1').src='./images/pic_bulbon.gif'"
+            >
+              Turn on the light
+            </button>
+
+            <button
+              onclick="document.getElementById('light1').src='./images/pic_bulboff.gif'"
+            >
+              Turn off the light
+            </button>
+          </div>
+        </div>
+        <div class="device-content">
+          <div class="device-img">
+            <img id="light2" src="./images/pic_bulboff.gif" />
+          </div>
+          <div class="controll">
+            <button
+              onclick="document.getElementById('light2').src='./images/pic_bulbon.gif'"
+            >
+              Turn on the light
+            </button>
+
+            <button
+              onclick="document.getElementById('light2').src='./images/pic_bulboff.gif'"
+            >
+              Turn off the light
+            </button>
+          </div>
+        </div>
+        <div class="device-content">
+          <div class="device-img">
+            <img id="light3" src="./images/pic_bulboff.gif" />
+          </div>
+          <div class="controll">
+            <button
+              onclick="document.getElementById('light3').src='./images/pic_bulbon.gif'"
+            >
+              Turn on the light
+            </button>
+
+            <button
+              onclick="document.getElementById('light3').src='./images/pic_bulboff.gif'"
+            >
+              Turn off the light
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="footer">
+      <div class="student text-primary">Lê Văn Thành</div>
+      <div class="university text-primary">
+        Trường đại học sư phạm kỹ thuật Thành phố Hồ Chí Minh
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
